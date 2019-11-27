@@ -18,6 +18,9 @@ quality. Testing is used for:
    Testing cannot establish that a product functions properly under all conditions,
    but only that it does not function properly under specific conditions.
 
+   As Edsger Dijkstra pointed out, testing can only show the presence of bugs,
+   not their absence.
+
 Testing can be done **manually** (e.g. checking if a webpage opens),
 but in most cases the use of **automated** tools is required.
 
@@ -37,6 +40,29 @@ Testing can also be divided into **static testing**
 (e.g. reviews, inspections) which involves *verification*,
 and **dynamic testing** (executing code given a set of test cases)
 which also involves validation.
+
+A collection of tests is called a **test suite**. It is important to keep track (and maintain) past tests
+as it is common that an already fixed bug reappears (*cycling*).
+**Regression testing** refers to the process against a set of past failures.
+
+**Test coverage**  is the portion of your code that is covered by at least one test case.
+
+.. important:: It is a good idea to write the test case before the program is written completely,
+   as it can give you insight into what your program should do.
+
+
+An *oracle* is a reliable produce (usually slow) to generate the same output as another funcition.
+They are used in testing.
+
+Test cases
+----------
+
+There are different types of tests:
+
+- *positive* tests: test with legitimate inputs. You expect the program to handle them correctly
+- *boundary cases*: test with boundary, but legitimate, inputs. You expect the program to handle them correctly
+- *negative* tests: inputs that you expect the program to reject
+
 
 Levels
 ------
